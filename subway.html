@@ -1,0 +1,1013 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- ### META ### -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mobivity">
+        <!-- ### TITLE ### -->
+        <title>Mobivity | More Customers, More Often</title>
+        <!-- ### FAVICON IMPORT ### -->
+        <!--  <link rel="icon" type="image/x-icon" href="/images/favicon.png" /> -->
+        <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/images/favicon.png" />
+        <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/css/bootstrap.min.css">-->
+        <!-- ### MAIN CSS ### -->
+        <!--<link rel="stylesheet" href="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/css/main_newtemplate.css?version=4">-->
+        <!--<link rel="stylesheet" href="/css/main_newtemplate.css?version=3">-->
+        <style type="text/css">
+
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+            html,
+            body,
+            div,
+            span,
+            applet,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            s,
+            samp,
+            small,
+            strike,
+            strong,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            embed,
+            figure,
+            figcaption,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            output,
+            ruby,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline
+            }
+
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+                display: block
+            }
+
+            body {
+                line-height: 1
+            }
+
+            ol,
+            ul {
+                list-style: none
+            }
+
+            blockquote,
+            q {
+                quotes: none
+            }
+
+            blockquote:before,
+            blockquote:after,
+            q:before,
+            q:after {
+                content: '';
+                content: none
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0
+            }
+
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-weight: 400;
+                color: #008952;
+                text-align: center
+            }
+
+            .container-fluid {
+                padding: 0px 20px;
+            }
+
+            section {
+                width: 100%;
+                max-width: 414px;
+                margin: 0px auto;
+                padding: 20px 0px
+            }
+
+            h1,
+            h3 {
+                font-weight: 700;
+                margin: 0px;
+                padding: 0px
+            }
+
+            p {
+                font-weight: 400;
+                margin: 0px;
+                padding: 0px
+            }
+
+            .light {
+                font-weight: 300
+            }
+
+            .actionButton {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 5px 10px;
+                border-radius: 4px;
+                -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                margin: 0px auto
+            }
+
+            #img_offer {
+                margin: 0px 0px;
+                padding: 0px 0px;
+            }
+
+            #img_offer img {
+                max-width: 414px;
+                width: 100%;
+            }
+
+            #logo {
+                width: 100%;
+                margin: 0px auto;
+                margin-top: -16px;
+                padding: 20px 0px
+            }
+
+            #logo .brandLogo {
+                max-width: 200px
+            }
+
+            #offerText {
+                padding: 20px 0px;
+                width: 100% !important
+            }
+
+            #offerText h1 {
+                font-size: 20px
+            }
+
+            @media screen and (min-width: 375px) {
+                #offerText h1 {
+                    font-size: 24px
+                }
+            }
+
+            #offerText p {
+                font-size: 10px;
+                padding-top: 20px;
+            }
+
+            .mainLegal p {
+                font-size: 10px;
+                font-weight: 300
+            }
+
+            #qrcode_img {
+                margin-bottom: 30px;
+            }
+
+            .ad_img {
+                width: 100%;
+                max-width: 375px;
+            }
+
+            #img_redeem_section {
+                margin-bottom: 40px;
+            }
+
+            #redeemLegal p {
+                font-size: 10px;
+                font-weight: 300
+            }
+
+            #init_redeem {
+                padding: 0;
+                margin: 0px auto
+            }
+
+            .expirationDate {
+                padding: 10px 0px;
+                font-size: 10px;
+                color: #58595B
+            }
+
+            #feedback button {
+                text-decoration: none;
+                color: #fff;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                font-weight: 700
+            }
+
+            #feedback #Likeofferfeedback {
+                background-color: #8DC63F;
+                transition: all 0.35s ease
+            }
+
+            #feedback #Likeofferfeedback:hover {
+                background-color: #709E40
+            }
+
+            #feedback #DisLikeofferfeedback {
+                background-color: #F2665E;
+                transition: all 0.35s ease
+            }
+
+            #feedback #DisLikeofferfeedback:hover {
+                background-color: #CE5750
+            }
+
+            .legalWarning p {
+                font-size: 12px;
+                font-weight: 300
+            }
+
+            #dialog-redeem, #dialog-error, #dialog-expired {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                width: 75%;
+                margin: 0px auto
+            }
+
+            #dialog-redeem .modal-header, #dialog-error .modal-header, #dialog-expired .modal-header {
+                padding: 10px 20px;
+                border-bottom: none;
+                color: #f4f4f4;
+                -webkit-border-top-left-radius: 4px;
+                -webkit-border-top-right-radius: 4px;
+                -moz-border-radius-topleft: 4px;
+                -moz-border-radius-topright: 4px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                text-transform: uppercase
+            }
+
+            #dialog-redeem .modal-title, #dialog-error .modal-title, #dialog-expired .modal-title {
+                font-weight: 700;
+                font-size: 24px
+            }
+
+            #dialog-redeem .modal-body, #dialog-error .modal-body, #dialog-expired .modal-body {
+                width: 75%;
+                margin: 0px auto;
+                overflow-y: scroll
+            }
+
+            #dialog-redeem .modal-body p, #dialog-error .modal-body p, #dialog-expired .modal-body p {
+                margin-bottom: 20px
+            }
+
+            #dialog-redeem .modal-body .button, #dialog-error .modal-body .button, #dialog-expired .modal-body .button {
+                display: block;
+                padding: 10px 20px;
+                border-radius: 4px;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                color: #f4f4f4;
+                font-weight: 700;
+                font-size: 18px;
+                margin-bottom: 20px
+            }
+
+            #dialog-redeem .modal-body .button:hover, #dialog-error .modal-body .button:hover, #dialog-expired .modal-body .button:hover {
+                text-decoration: none
+            }
+
+            #redeem_optional_text {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #929497;
+                border: 2px dashed #929497;
+                border-radius: 4px;
+                display: inline-block;
+                padding: 4px 8px;
+                margin-top: -20px;
+                margin-bottom: 20px;
+            }
+
+            #expirationTimerSection {
+                padding: 40px 0;
+                padding-top: 0px;
+            }
+
+            #expirationTimerSection #countdownText {
+                text-align: left
+            }
+
+            #expirationTimerSection #countdownText .verticalCenterWrapper {
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%)
+            }
+
+            #expirationTimerSection #countdownText .verticalCenterWrapper h3 {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 10px
+            }
+
+            @media screen and (min-width: 375px) {
+                #expirationTimerSection #countdownText .verticalCenterWrapper h3 {
+                    font-size: 20px
+                }
+            }
+
+            @media screen and (min-width: 414px) {
+                #expirationTimerSection #countdownText .verticalCenterWrapper h3 {
+                    font-size: 22px
+                }
+            }
+
+            #expirationTimerSection #countdownText .verticalCenterWrapper p {
+                font-size: 12px;
+                font-weight: 300
+            }
+
+            #expirationTimerSection #countdownTimer .c-container {
+                position: relative;
+                width: 90%;
+                margin: 0px auto
+            }
+
+            #expirationTimerSection #countdownTimer .c-container .c-text {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                font-size: 32px;
+                line-height: 24px;
+                top: 50%;
+                margin-top: -15px;
+                font-weight: 300
+            }
+
+            #expirationTimerSection #countdownTimer .c-container svg {
+                width: 100%
+            }
+
+            #init_refer {
+                margin-bottom: 40px
+            }
+
+            #qrcode_init_refer {
+                margin-bottom: 40px
+            }
+
+            #redeemFinePrint p {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 300;
+            }
+
+            #progressText h3 {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px
+            }
+
+            #progressText h3 span {
+                font-weight: 700
+            }
+
+            #shareButtons .row {
+                margin: 0px auto;
+                padding: 0px;
+                text-align: center
+            }
+
+            #shareButtons .centered {
+                float: none;
+                margin: 0 auto
+            }
+
+            #shareButtons .button {
+                border-radius: 4px;
+                font-size: 12px;
+                color: #fff;
+                padding: 5px 20px;
+                text-decoration: none;
+                width: 70px;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                margin: 0px auto
+            }
+
+            #shareButtons #facebook .button {
+                background-color: #3B5998;
+                background-image: url(https://i.imgur.com/6LBKUKf.png);
+                background-repeat: no-repeat;
+                background-position: 15% 45%;
+                background-size: 6px;
+                padding-left: 27px;
+                display: block
+            }
+
+            #shareButtons #twitter .button {
+                background-color: #55acee;
+                background-image: url(https://i.imgur.com/DzbV4JZ.png);
+                background-repeat: no-repeat;
+                background-position: 12% 50%;
+                background-size: 15px;
+                padding-left: 30px;
+                display: block
+            }
+
+            #shareButtons #sms .button {
+                background-color: #60B561;
+                background-image: url(https://i.imgur.com/q8JjQLf.png);
+                background-repeat: no-repeat;
+                background-position: 20% 50%;
+                background-size: 15px;
+                padding-left: 35px;
+                display: block
+            }
+
+            #progressBar {
+                padding: 0px;
+                min-height: 35px;
+                float: center;
+                text-align: center;
+                margin: 0px auto;
+                margin-bottom: 40px;
+                width: 100%;
+                max-width: 375px;
+                border: 2px solid;
+                border-radius: 25px;
+                background: none;
+                color: #fff
+            }
+
+            #progressBar .progress {
+                float: left;
+                min-height: 30px;
+                border: 3px solid;
+                text-align: center;
+                margin: 0px auto;
+                width: 40%;
+                border-radius: 25px;
+                font-size: 14px;
+                line-height: 24px
+            }
+
+            #returnToOffer {
+                margin-bottom: 40px
+            }
+
+            #raf_legal {
+                font-size: 10px
+            }
+
+            #nolongervalid h2 {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                padding-bottom: 60px;
+            }
+
+
+            .zone1 {
+                background-color: #ffffff !important;
+            }
+            .zone2 {
+                background-color: #68BC49 !important;
+                color: #ffffff !important;
+            }
+            .zone3 {
+                background-color: #ffffff !important;
+                color: #008952 !important;
+            }
+            .zone4 {
+	            color: #008952 !important;
+            }
+            a.zone4 {
+                color: #ffffff !important;
+                background-color: #008952 !important;
+            }
+
+            #dialog-redeem .modal-body, #dialog-error .modal-body, #dialog-expired .modal-body {
+                color: #68BC49;
+            }
+
+            #dialog-redeem .modal-body .button#cancelButton {
+                color: #ffffff;
+                background-color: #929497;
+            }
+
+            #dialog-error .modal-body .button#closeErrorButton, #dialog-expired .modal-body .button#closeExpiredButton {
+                background-color: #68BC49;
+            }
+
+            #dialog-redeem .modal-body .button#confirmButton {
+                background-color: #008952;
+            }
+
+            #nolongervalid {
+                color: #68BC49;
+            }
+
+            .legalWarning, #redeemFinePrint {
+                color: #929497;
+            }
+
+            .c-text, #countdownText {
+                color: #008952;
+            }
+
+            #progressText {
+                color: #008952;
+            }
+            #progressBar {
+                border: 2px solid #68BC49;
+            }
+            #progressBar .progress {
+                border: 3px solid #ffffff;
+                background: #68BC49;
+            }
+            #raf_legal {
+                color: #929497;
+            }
+        </style>
+
+        <!-- Start Twitter Card Meta -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@subway">
+        <meta name="twitter:creator" content="@subway">
+        <meta name="twitter:title" content="Get a Free 6-Inch with a 30oz. Drink!">
+        <meta name="twitter:description" content="Click here to join the Subway Text Club today and get a free 6-inch SUBWAY sandwich with the purchase of a 30oz. drink.">
+        <meta name="twitter:image" content="https://s3-us-west-2.amazonaws.com/donotdeletethis/SubwayFBShareImage.png">
+        <!-- End Twitter Card Meta -->
+
+		<!-- ### To support cross browser cache controls ### -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+    </head>
+    <body class="zone3">
+        <!-- ### Start Facebook Connect JS ### -->
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '923091201099481',
+                xfbml      : true,
+                version    : 'v2.5'
+              });
+            };
+
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- ### End Facebook Connect JS ### -->
+
+        <!-- ### Start Logo Container ### -->
+        <div class="container-fluid zone1" id="logo">
+            <img src="https://s3-us-west-1.amazonaws.com/smartsms/db7a0526-1008-4cba-8971-41ad16341d6a.png" alt="SUBWAY Logo" class="brandLogo">
+        </div>
+        <!-- ### End Logo Container ### -->
+
+        <!-- ### Start Logo Container ### -->
+        <div class="container-fluid zone1" id="img_offer" style="display: none;">
+            <img src="">
+        </div>
+        <!-- ### End Logo Container ### -->
+
+        <!-- ### Start Offer Text Container ### -->
+        <div class="container-fluid zone2" id="offerText">
+            <div id="offerTextOffer">
+                <h1>FREE 6-INCH CLASSIC SUB WITH PURCHASE OF A 30 OZ DRINK</h1>
+            </div>
+            <div id="offerTextRefer" style="display:none;">
+                <h1>Refer Friends to Earn More Offers</h1>
+                <p>Valid only at participating locations.</p>
+            </div>
+        </div>
+        <!-- ### End Offer Text Container ### -->
+
+        <!-- ### Start Main Content Container ### -->
+        <!--Used to be container-fluid-->
+        <div class="container-fluid zone3">
+
+            <!-- ### Start Main Legal Container ### -->
+            <section class="mainLegal">
+                <p id="mainLegalText">Additional charges for extras and Deluxe. Plus tax. Participation varies. Limit 1 per customer. No cash value. May not be combined with other offers, coupons or discount cards. Void if transferred, sold, auctioned, reproduced or altered. SUBWAY® is a Registered Trademark of Subway IP Inc. ©2016 Subway IP Inc. Valid only at participating U.S. locations.</p>
+            </section>
+            <!-- ### End Main Legal Container ### -->
+
+            <!-- ### Start Redeem Pop-up Legal Container ### -->
+            <section id="redeemLegal" style="display:none;">
+                <p>Valid only at participating U.S. locations</p>
+            </section>
+            <!-- ### End Redeem Pop-up Legal Container ### -->
+
+
+            <section class="zone4" id="qrcode" style="display:none;">
+
+                <div id="qrcode_img"></div>
+
+                <!-- ### Start Refer a Friend Button ### -->
+                <div id="qrcode_init_refer" style="display:none;">
+                    <a href="#" class="actionButton zone4" id="qrcode_referButton">Earn More Free Subs!</a>
+                </div>
+                <!-- ### End Refer a Friend Button ### -->
+
+                <!-- ### Start Fine Print Text ### -->
+                <div id="redeemFinePrint">
+                    <p>Exclusions apply. <span id="qrcode_referFinePrint" style="display:none;">Click the button above to find ways to earn more offers.</span></p>
+                </div>
+                <!-- ### End Fine Print Text ### -->
+
+            </section>
+
+
+            <section class="zone4" id="init_redeem" style="display:none;">
+
+                <!-- ### Start Landing Image Section ### -->
+                <section id="img_landing_section" style="display: none;">
+                    <img src="" id="img_landing" class="ad_img">
+                </section>
+                <!-- ### End Landing Image Section ### -->
+
+                <!-- ### Start Redeem Button Section ### -->
+                <section data-toggle="modal" data-target="#dialog-redeem" id="redeemButtonSection">
+                    <a href="#" class="actionButton zone4" id="redeemButton">Redeem</a>
+                </section>
+                <!-- ### Start Redeem Button Section ### -->
+
+                <!-- ### Start Legal Warning ### -->
+                <section class="legalWarning">
+                    <p>Only press redeem during the purchase process in the presence of the cashier.<span id="expire_date" style="display:none;">.</span></p>
+                </section>
+                <!-- ### End Legal Warning ### -->
+
+                <!-- ### Start Feedback Container - Currently Not Included ### -->
+                <section class="offerbuttons" id="feedback" style="display:none;">
+                    <button class="btn btn-thumbs-up" id="Likeofferfeedback" style="width: 90px;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</button>
+                    &nbsp;
+                    <button class="btn btn-thumbs-down" id="DisLikeofferfeedback" style="width: 90px;"><span class="glyphicon glyphicon-thumbs-down btn-fixed-width" aria-hidden="true"></span> Dislike</button>
+                </section>
+                <!-- ### End Feedback Container - Currently Not Included ### -->
+
+                <!-- ### Start Modal Container ### -->
+                <div id="dialog-redeem" class="modal animate fadeIn" tabindex="-1" role="dialog" aria-labelledby="dialog-redeem-label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- ### Modal Header ### -->
+                            <div class="modal-header zone2" id="dialog-redeem-header">
+                                <h2 id="dialog-redeem-label" class="modal-title">Redeem Coupon</h2>
+                            </div>
+                            <!-- ### End Modal Header ### -->
+
+                            <!-- ### State Modal Body ### -->
+                            <div class="modal-body" id="dialog-redeem-modal-body">
+                                <p>Valid only at participating U.S. locations</p>
+                                <p>To redeem this coupon cashier must be present. Coupon will expire within 5 minutes after &#34;Confirm&#34; is selected.</p>
+                                <a href="#" data-dismiss="modal" class="button" id="confirmButton">Confirm</a>
+                                <a href="#" data-dismiss="modal" class="button" id="cancelButton">Cancel</a>
+                            </div>
+                            <!-- ### End Modal Body ### -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ### End Modal Container ### -->
+
+            </section>
+
+
+
+
+            <section id="redeem" style="display:none;">
+
+                <!-- ### Start Redeem Image Section ### -->
+                <div id="img_redeem_section" style="display: none;">
+                    <img src="" id="img_redeem" class="ad_img">
+                </div>
+                <!-- ### End Redeem Image Section ### -->
+
+                <div id="redeem_optional_text_section" style="display: none;">
+                    <h3 id="redeem_optional_text"></h3>
+                </div>
+
+                <!-- ### Start Countdown Row ### -->
+                <div class="row" id="expirationTimerSection">
+
+                    <!-- ### Start Countdown Text ### -->
+                    <div class="col-xs-6 columnHeightMatch" id="countdownText">
+                        <div class="verticalCenterWrapper">
+                            <div class="countdownExpiredBefore">
+                                <h3>Expiration Timer</h3>
+                                <p>Coupon expires on <span id="redeem_date"></span>.</p>
+                            </div>
+                            <div class="countdownExpiredAfter" style="display:none;">
+                                <h3>Coupon Expired</h3>
+                                <p id="redeem_datetime"> at .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ### End Countdown Text ### -->
+
+                    <!-- ### Start Countdown Timer -->
+                    <div class="col-xs-6 columnHeightMatch" id="countdownTimer">
+                        <div class="c-container">
+                        <div class="c-text"></div>
+                        <svg id="yeah" viewbox="-5 -5 110 110">
+                            <path id="bg" stroke-linecap="round" stroke-width="10" stroke="#E6E7E8" fill="none" d="M50 2 a 48 48 0 0 1 0 96 a 48 48 0 0 1 0 -96"></path>
+                            <path id="progress" stroke-linecap="round" stroke-width="10" stroke="#008952" fill="none" d="M50 2 a 48 48 0 0 1 0 96 a 48 48 0 0 1 0 -96"></path>
+                        </svg>
+                        </div>
+                    </div>
+                    <!-- ### End Countdown Timer ### -->
+
+                </div>
+                <!-- ### End Countdown Row ### -->
+
+                <!-- ### Start Refer a Friend Button ### -->
+                <div id="init_refer" style="display:none;">
+                    <a href="#" class="actionButton zone4" id="referButton">Earn More Free Subs!</a>
+                </div>
+                <!-- ### End Refer a Friend Button ### -->
+
+                <!-- ### Start Fine Print Text ### -->
+                <div id="redeemFinePrint">
+                    <p>Exclusions apply. If the timer is not moving, this offer is no longer valid. <span id="referFinePrint" style="display:none;">After redeeming this coupon, click the button above to find ways to earn more offers.</span></p>
+                </div>
+                <!-- ### End Fine Print Text ### -->
+
+            </section>
+
+
+            <section id="init_referDashboard" style="display:none;">
+
+                <!-- ### Start Progess Text Container ### -->
+                <section id="progressText">
+                    <h3>Get <span id="referalsLeft"></span> more <span id="friends">friends</span> to sign up to receive <span id="raf_reward"></span>!</h3>
+                </section>
+                <!-- ### End Progress Text Container ### -->
+
+                <!-- ### Start Share Buttons Container ### -->
+                <section id="shareButtons">
+                    <div class="row centered">
+
+                    <!-- Start Facebook -->
+                    <div class="col-xs-4" id="facebook">
+                        <a href="javascript:sendFacebookMsg();" class="button">Share</a>
+                    </div>
+                    <!-- End Facebook -->
+
+                    <!-- Start Twitter -->
+                    <div class="col-xs-4" id="twitter">
+                        <a href="javascript:sendTwitterMsg();" class="button">Tweet</a>
+                    </div>
+                    <!-- End Twitter -->
+
+                    <!-- Start SMS -->
+                    <div class="col-xs-4" id="sms">
+                        <a href="javascript:sendSMSMsg();" class="button">SMS</a>
+                    </div>
+                    <!-- End SMS -->
+
+                    </div>
+                </section>
+                <!-- ### End Share Buttons Container ### -->
+
+                <section>
+                    <!-- ### Start Progress Bar Container ### -->
+                    <!--<div class="container" id="progressBar">-->
+                        <!--&lt;!&ndash;<p class="progress">2 of 5</p>&ndash;&gt;-->
+                        <!--<p class="progress" id="progresstext"></p>-->
+                    <!--</div>-->
+                    <div id="containerprogress" style="display:none;">
+                        <section id="progressBar">
+                            <p class="progress" id="progresstext"></p>
+                        </section>
+                    </div>
+                    <!-- ### End Progress Bar Container ### -->
+
+                    <!-- ### Start Return to Offer Button ### -->
+                    <div id="returnToOffer">
+                        <a href="#" class="actionButton zone4" id="returnToOfferButton">Return to Offer</a>
+                    </div>
+                    <!-- ### End Return to Offer Button ### -->
+
+                    <!-- ### Start RAF Legal ### -->
+                    <div>
+                        <p id="raf_legal"></p>
+                    </div>
+                    <!-- ### End RAF Legal ### -->
+                </section>
+
+            </section>
+
+        </div>
+        <!-- ### End Main Content Container ### -->
+
+
+        <p id="location" class="hide"></p>
+        <p id="location_result" class="hide"></p>
+        <p id="sid" class="hide">ef65b0c74de8470cf4e3eef0a00b16212bc78f9cf495987a1442f8e2a18fb5c5</p>
+        <p id="RAF" class="hide"></p>
+        <p id="keywordtosubscribeto" class="hide">OFFERS</p>
+        <p id="keywordsmartsms" class="hide">SANFRANCISCO</p>
+        <p id="campaignidtosubscribeto" class="hide">255599</p>
+        <p id="campaignid" class="hide">257034</p>
+        <p id="companyid" class="hide">431</p>
+        <p id="achivementcampaignid" class="hide">336259</p>
+        <p id="Max_num_referals" class="hide"></p>
+        <p id="FBShareMessage" class="hide"></p>
+        <p id="TwitterShareMessage" class="hide"></p>
+        <p id="ShareMessage" class="hide"></p>
+        <p id="shareURL" class="hide"></p>
+        <p id="RAFcode" class="hide"></p>
+        <p id="offerfeedback" class="hide"></p>
+        <p id="enablefeedback" class="hide">false</p>
+        <p id="CountDownTime" class="hide">5</p>
+        <p id="id" class="hide"></p>
+        <p id="smartsms" class="hide">false</p>
+        <p id="refer" class="hide">true</p>
+        <p id="qr_code" class="hide"></p>
+        <p id="is_standard_image_broadcast" class="hide"></p>
+
+        <div id="dialog-error" class="modal animate fadeIn" tabindex="-1" role="dialog" aria-labelledby="dialog-error-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- ### Modal Header ### -->
+                    <div class="modal-header zone2" id="dialog-error-header">
+                        <h2 id="dialog-error-label" class="modal-title">Error</h2>
+                    </div>
+                    <!-- ### End Modal Header ### -->
+
+                    <!-- ### State Modal Body ### -->
+                    <div class="modal-body" id="dialog-error-modal-body">
+                        <p>An error occurred. Please try again.</p>
+                        <a href="#" data-dismiss="modal" class="button" id="closeErrorButton">Close</a>
+                    </div>
+                    <!-- ### End Modal Body ### -->
+
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog-expired" class="modal animate fadeIn" tabindex="-1" role="dialog" aria-labelledby="dialog-expired-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- ### Modal Header ### -->
+                    <div class="modal-header zone2" id="dialog-expired-header">
+                        <h2 id="dialog-expired-label" class="modal-title">Expired</h2>
+                    </div>
+                    <!-- ### End Modal Header ### -->
+
+                    <!-- ### State Modal Body ### -->
+                    <div class="modal-body" id="dialog-expired-modal-body">
+                        <p>The coupon has expired.</p>
+                        <a href="#" data-dismiss="modal" class="button" id="closeExpiredButton">Close</a>
+                    </div>
+                    <!-- ### End Modal Body ### -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ### jQuery CDN Include ### -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!--<script src="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/js/jquery-2.2.3.min.js"></script>-->
+        <!--<script src="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/js/ui/1.11.4/jquery-ui.js"></script>-->
+
+        <!-- ### Bootstrap JS CDN Include ### -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <!-- ### Inclusions for Countdown Timer ### -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+        <script src="https://rawgit.com/mckamey/countdownjs/master/countdown.min.js"></script>
+
+        <!-- ### Main Minified JS Include -->
+        <script src="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/js/main_target_newtemplate.js?version=12"></script>
+        <!--<script src="/js/main_target_newtemplate.js?version=1"></script>-->
+
+
+        <!-- ### Start Match Height Function ### -->
+        <script>
+            $(function() {
+                $('.columnHeightMatch').matchHeight();
+            });
+        </script>
+        <!-- ### End Match Height Function ### -->
+
+        <!-- ### Start Modal Height Function ### -->
+        <!--<script>-->
+            <!--$(function() {-->
+                <!--var header_height = $("#dialog-redeem-header").height();-->
+                <!--var document_height = $(document).height();-->
+                <!--console.log(document_height*0.50);-->
+                <!--$('#dialog-redeem-modal-body').height(document_height*0.50);-->
+            <!--});-->
+        <!--</script>-->
+        <!-- ### End Modal Height Function ### -->
+
+        <!-- ### Start QR Code Script Include ### -->
+        <script src="https://storage.googleapis.com/mobivitysmartsms.appspot.com/static/js/jquery.qrcode.min.js?version=1"></script>
+
+    </body>
+</html>
+
