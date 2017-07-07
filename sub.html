@@ -826,7 +826,7 @@
                         <div class="c-text" id = "time">5:00</div>
 			<script type="text/javascript">
 				var time = 300; /* how long the timer runs for */
-				var initialOffset = '440';
+				var initialOffset = '301.44';
 				var i = 1
 				var interval = setInterval(function() {
    					$('.circle_animation').css('stroke-dashoffset', initialOffset-(i*(initialOffset/time)));
@@ -838,13 +838,8 @@
 				}, 1000);
 			</script>
 			<style>
-			svg {
-   				-webkit-transform: rotate(-90deg);
-   				 transform: rotate(-90deg);
-			}
 			.circle_animation {
-  				stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
- 				stroke-dashoffset: 440;
+  				 
   				transition: all 1s linear;
 			}
 			</style>
