@@ -828,9 +828,37 @@ window.onload = function () {
 };
 </script>
                         <div class="c-text" id = "time">5:00</div>
+			<script type="text/javascript">
+var time = 300; /* how long the timer runs for */
+var initialOffset = '440';
+var i = 1
+var interval = setInterval(function() {
+    $('.circle_animation').css('stroke-dashoffset', initialOffset-(i*(initialOffset/time)));
+    $('h2').text(i);
+    if (i == time) {
+        clearInterval(interval);
+    }
+    i++;  
+}, 1000);
+</script>
+<style>
+
+
+svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.circle_animation {
+  stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 440;
+  transition: all 1s linear;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                         <svg id="yeah" viewBox="-5 -5 110 110">
                             <path id="bg" stroke-linecap="round" stroke-width="10" stroke="#E6E7E8" fill="none" d="M50 2 a 48 48 0 0 1 0 96 a 48 48 0 0 1 0 -96"></path>
-                            <path id="progress" stroke-linecap="round" stroke-width="10" stroke="#008952" fill="none" d="M50 2 a 48 48 0 0 1 0 96 a 48 48 0 0 1 0 -96" style="stroke-dasharray: 301.44, 301.44;"></path>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg"><path class="circle_animation" id="progress" stroke-linecap="round" stroke-width="10" stroke="#008952" fill="none" d="M50 2 a 48 48 0 0 1 0 96 a 48 48 0 0 1 0 -96" style="stroke-dasharray: 301.44, 301.44;"></path></swg>
                         <desc>Created with Snap</desc><defs></defs></svg>
                         </div>
                     </div>
