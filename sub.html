@@ -784,23 +784,20 @@
 
                 <!-- ### Start Countdown Row ### -->
                 <div class="row" id="expirationTimerSection">
-			<script type="text/javascript">
-				n =  new Date();
-				y = n.getFullYear();
-				m = n.getMonth() + 1;
-				d = n.getDate();
-				document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-			</script>
+		<script>
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.getMonth()+1+"/"+ d.getDate()+"/"+d.getFullYear() ;
+		</script>
                     <!-- ### Start Countdown Text ### -->
                     <div class="col-xs-6 columnHeightMatch" id="countdownText" style="height: 173px;">
                         <div class="verticalCenterWrapper">
                             <div class="countdownExpiredBefore" style="display: none;">
                                 <h3>Expiration Timer</h3>
-                                <p>Coupon expires on <span id="date"></span>.</p>
+                                <p>Coupon expires on <p id="demo"></p>.</p>
                             </div>
                             <div class="countdownExpiredAfter" style="">
                                 <h3>Expiration Timer</h3>
-                                <p>Coupon expires on <input id="today" type="date">.</p>
+                                <p>Coupon expires on <p id="demo"></p>.</p>
                             </div>
                         </div>
                     </div>
