@@ -794,11 +794,8 @@
                             <div class="countdownExpiredAfter" id="demo" style="">
                                 <h3>Expiration Timer</h3>
                                 <script>
-					n =  new Date();
-					y = n.getFullYear();
-					m = n.getMonth() + 1;
-					d = n.getDate();
-					document.getElementById("date").innerHTML = m + "/" + d + "/" + y;	
+					var today = new Date();
+					document.getElementById('date').innerHTML=today;	
 				</script>
 				    
 				    
